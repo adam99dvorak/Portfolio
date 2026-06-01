@@ -1,0 +1,113 @@
+body {
+    background-color: #F8F8F8;
+}
+
+nav {
+    display: flex;
+    gap: 2.5rem;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222222;
+}
+
+nav a:hover {
+    color: #7B7B7B;
+    transition: 0.4s;
+}
+
+.main-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 250px;
+    font-weight: 100;
+    padding-top: 80px;
+    padding-left: 50px;
+    margin-bottom: 10px;
+}
+
+.web-dv {
+    padding-left: 200px;
+    margin-top: -50px;
+    font-size: 20px;
+    margin-bottom: 170px;
+}
+
+
+.name-font {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+}
+
+.about-Hl-photo{
+    width: auto;
+    height: 500px;
+    padding-right: 150px;
+
+}
+
+.about {
+    font-family: 'DM Sans', sans-serif;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 6rem 7rem;
+}
+
+.about-inner {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: end;
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-photo{
+    padding-left: 10px;
+    width: auto;
+    height: 550px;
+
+}
+
+.about-text-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding-top: 2rem;
+}
+
+.about-label {
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #aaa9a3;
+}
+
+.about-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(36px, 4.5vw, 56px);
+    letter-spacing: 1px;
+    line-height: 1;
+    color: #1a1a18;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.about-line {
+    width: 100px;
+    height: 2px;
+    background: #1a1a18;
+}
+
+.about-text {
+    font-size: 13px;
+    color: #555550;
+    font-weight: 300;
+    line-height: 1.75;
+}
