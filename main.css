@@ -19,6 +19,12 @@ nav a:hover {
     transition: 0.4s;
 }
 
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .main-text {
     font-family: 'DM Sans', sans-serif;
     font-size: 250px;
@@ -32,20 +38,20 @@ nav a:hover {
     padding-left: 200px;
     margin-top: -50px;
     font-size: 20px;
-    margin-bottom: 170px;
 }
 
+.photo-right {
+    width: 750px;
+}
 
 .name-font {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 25px;
 }
 
-.about-Hl-photo{
-    width: auto;
-    height: 500px;
-    padding-right: 150px;
-
+.about-Hl-photo {
+    height: 750px;
+    padding-right: 130px;
 }
 
 .about {
@@ -63,14 +69,13 @@ nav a:hover {
     align-items: end;
     width: 80%;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: auto;
 }
 
-.about-photo{
+.about-photo {
     padding-left: 10px;
     width: auto;
     height: 550px;
-
 }
 
 .about-text-wrap {
@@ -89,12 +94,11 @@ nav a:hover {
 
 .about-name {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(36px, 4.5vw, 56px);
+    font-size:55px;
     letter-spacing: 1px;
     line-height: 1;
     color: #1a1a18;
     display: flex;
-    align-items: baseline;
     gap: 0.5rem;
     flex-wrap: wrap;
 }
