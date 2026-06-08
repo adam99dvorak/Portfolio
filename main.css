@@ -25,7 +25,8 @@ nav a:hover {
     justify-content: space-between;
 }
 
-.main-text {
+
+.Hello-text {
     font-family: 'DM Sans', sans-serif;
     font-size: 250px;
     font-weight: 100;
@@ -40,26 +41,23 @@ nav a:hover {
     font-size: 20px;
 }
 
-.photo-right {
-    width: 750px;
-}
-
 .name-font {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 25px;
 }
 
-.about-Hl-photo {
+.Hl-photo {
     height: 750px;
     padding-right: 130px;
 }
 
+/* ABOUT */
 .about {
     font-family: 'DM Sans', sans-serif;
     background: #ffffff;
     display: flex;
     align-items: center;
-    padding: 6rem 7rem;
+    padding: 6rem 7rem 7rem 6rem;
 }
 
 .about-inner {
@@ -94,7 +92,7 @@ nav a:hover {
 
 .about-name {
     font-family: 'Bebas Neue', sans-serif;
-    font-size:55px;
+    font-size: 55px;
     letter-spacing: 1px;
     line-height: 1;
     color: #1a1a18;
@@ -114,4 +112,67 @@ nav a:hover {
     color: #555550;
     font-weight: 300;
     line-height: 1.75;
+}
+
+/* PROJECTS */
+.projects {
+    font-family: 'DM Sans', sans-serif;
+    background: #F8F8F8;
+    padding: 150px 7rem 250px 7rem
+
+}
+
+.projects-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 55px;
+    letter-spacing: 1px;
+    padding-top: 50px;
+    color: #1a1a18;
+    margin-bottom: 4rem;
+}
+
+.projects-line {
+    width: 100px;
+    height: 2px;
+    background: #1a1a18;
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.project-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    color: #1a1a18;
+    letter-spacing: 1px;
+}
+
+.project-text {
+    font-size: 12px;
+    color: #555550;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.project-link {
+    font-size: 12px;
+    color: #1a1a18;
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+.project-link:hover {
+    color: #7B7B7B;
+    transition: 0.4s;
 }
