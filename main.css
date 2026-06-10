@@ -1,5 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #F8F8F8;
+    overflow-x: hidden;
 }
 
 nav {
@@ -24,7 +29,6 @@ nav a:hover {
     align-items: center;
     justify-content: space-between;
 }
-
 
 .Hello-text {
     font-family: 'DM Sans', sans-serif;
@@ -87,7 +91,7 @@ nav a:hover {
     font-size: 11px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: #aaa9a3;
+    color: #7B7B7B;
 }
 
 .about-name {
@@ -95,7 +99,7 @@ nav a:hover {
     font-size: 55px;
     letter-spacing: 1px;
     line-height: 1;
-    color: #1a1a18;
+    color: #222222;
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
@@ -104,12 +108,12 @@ nav a:hover {
 .about-line {
     width: 100px;
     height: 2px;
-    background: #1a1a18;
+    background: #222222;
 }
 
 .about-text {
     font-size: 13px;
-    color: #555550;
+    color: #7B7B7B;
     font-weight: 300;
     line-height: 1.75;
 }
@@ -118,8 +122,7 @@ nav a:hover {
 .projects {
     font-family: 'DM Sans', sans-serif;
     background: #F8F8F8;
-    padding: 150px 7rem 250px 7rem
-
+    padding: 150px 7rem 250px 7rem;
 }
 
 .projects-heading {
@@ -127,14 +130,14 @@ nav a:hover {
     font-size: 55px;
     letter-spacing: 1px;
     padding-top: 50px;
-    color: #1a1a18;
+    color: #222222;
     margin-bottom: 4rem;
 }
 
 .projects-line {
     width: 100px;
     height: 2px;
-    background: #1a1a18;
+    background: #222222;
     margin-bottom: 2rem;
 }
 
@@ -154,20 +157,20 @@ nav a:hover {
 .project-title {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 28px;
-    color: #1a1a18;
+    color: #222222;
     letter-spacing: 1px;
 }
 
 .project-text {
     font-size: 12px;
-    color: #555550;
+    color: #7B7B7B;
     font-weight: 400;
     line-height: 2;
 }
 
 .project-link {
     font-size: 12px;
-    color: #1a1a18;
+    color: #222222;
     text-decoration: none;
     align-self: flex-start;
 }
@@ -175,4 +178,184 @@ nav a:hover {
 .project-link:hover {
     color: #7B7B7B;
     transition: 0.4s;
+}
+
+/* CONTACT */
+.contact {
+    font-family: 'DM Sans', sans-serif;
+    background: #ffffff;
+    padding: 270px 7rem 200px 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 55px;
+    letter-spacing: 1px;
+    color: #222222;
+}
+
+.contact-line {
+    width: 100px;
+    height: 2px;
+    background: #222222;
+    margin-bottom: 2rem;
+}
+
+.contact-text {
+    font-size: 13px;
+    color: #7B7B7B;
+    font-weight: 300;
+    line-height: 1.75;
+    max-width: 480px;
+    margin-bottom: 2.5rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 13px;
+    color: #222222;
+    text-decoration: none;
+}
+
+.contact-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #aaa9a3;
+    width: 80px;
+    text-align: right;
+}
+
+.contact-value {
+    color: #222222;
+    font-weight: 400;
+    width: 200px;
+    text-align: left;
+}
+
+.contact-item:hover .contact-value {
+    color: #7B7B7B;
+    transition: 0.4s;
+}
+
+.block-del {
+    display: block;
+}
+
+/* TABLET - iPad a podobné (max 1024px) */
+@media (max-width: 1024px) {
+    .Hello-text {
+        font-size: 160px;
+        padding-left: 30px;
+        padding-top: 60px;
+    }
+
+    .web-dv {
+        padding-left: 100px;
+        margin-top: -30px;
+    }
+
+    .Hl-photo {
+        height: 550px;
+        padding-right: 40px;
+    }
+
+    .about {
+        padding: 4rem 3rem;
+    }
+
+    .about-inner {
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .about-photo {
+        height: 400px;
+    }
+
+    .projects {
+        padding: 6rem 3rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .contact {
+        padding: 6rem 3rem;
+    }
+}
+
+/* MOBIL (max 768px) */
+@media (max-width: 768px) {
+    .block-del {
+        display: none;
+    }
+
+    nav {
+        padding-left: 20px;
+        gap: 1.5rem;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .Hello-text {
+        font-size: 80px;
+        padding-left: 20px;
+        padding-top: 40px;
+    }
+
+    .web-dv {
+        padding-left: 20px;
+        margin-top: 0;
+    }
+
+    .Hl-photo {
+        height: auto;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .about {
+        padding: 3rem 2rem;
+    }
+
+    .about-inner {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .about-photo {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+    }
+
+    .projects {
+        padding: 4rem 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        padding: 4rem 2rem;
+    }
 }
