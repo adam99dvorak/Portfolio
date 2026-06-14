@@ -262,7 +262,7 @@ nav a:hover {
     display: block;
 }
 
-/* TABLET - iPad a podobné (max 1024px) */
+/* TABLET (max 1024px) */
 @media (max-width: 1024px) {
     .Hello-text {
         font-size: 160px;
